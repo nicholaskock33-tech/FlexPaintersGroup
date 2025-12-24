@@ -90,7 +90,7 @@
 
         .section-title h2 { font-size: 2.5rem; }
 
-        /* ABOUT SECTION (NEW) */
+        /* ABOUT SECTION */
         .about-content {
             max-width: 900px;
             margin: auto;
@@ -123,7 +123,7 @@
             margin-bottom: 15px;
         }
 
-        /* GALLERY – UNCHANGED */
+        /* GALLERY */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -142,7 +142,11 @@
             object-fit: cover;
         }
 
-        /* CONTACT – WIDTH FIXED (LIKE ORIGINAL) */
+        /* CONTACT – STYLE ADDED ONLY */
+        #contact {
+            background: linear-gradient(135deg, var(--light-blue), #ffffff);
+        }
+
         .contact-container {
             display: flex;
             gap: 50px;
@@ -151,10 +155,20 @@
         .contact-details,
         .contact-form {
             flex: 1;
+            background: var(--white);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
         }
 
         .contact-details p {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+        }
+
+        .contact-details i {
+            color: var(--gold);
+            margin-right: 10px;
         }
 
         .contact-details a {
@@ -240,12 +254,9 @@
     </div>
 </section>
 
-<!-- ABOUT SECTION -->
 <section id="about">
     <div class="container">
-        <div class="section-title">
-            <h2>About Us</h2>
-        </div>
+        <div class="section-title"><h2>About Us</h2></div>
         <div class="about-content">
             <p>
                 Flex Painters Group is a professional painting company based in Cape Town,
@@ -253,8 +264,7 @@
             </p>
             <p>
                 We take pride in our workmanship, attention to detail, and reliable service.
-                From preparation to the final coat, every project is handled with care
-                to ensure long-lasting and beautiful results.
+                From preparation to the final coat, every project is handled with care.
             </p>
         </div>
     </div>
@@ -294,8 +304,8 @@
         <div class="section-title"><h2>Contact Us</h2></div>
         <div class="contact-container">
             <div class="contact-details">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:flexpainter's17@gmail.com">flexpainter's17@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+27618758">(+27) 61 875 8</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:flexpainter's17@gmail.com">flexpainter's17@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:+27618758">(+27) 61 875 8</a></p>
                 <p>Windhoek Main Road, Cape Town</p>
             </div>
 
