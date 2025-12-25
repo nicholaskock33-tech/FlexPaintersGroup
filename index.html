@@ -230,13 +230,10 @@
             text-align: center;
         }
 
-        /* WhatsApp Button */
-        .whatsapp-float {
+        /* WhatsApp & Facebook Buttons */
+        .whatsapp-float, .facebook-float {
             position: fixed;
             bottom: 25px;
-            right: 25px;
-            background: #25D366;
-            color: #fff;
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -245,7 +242,12 @@
             justify-content: center;
             font-size: 30px;
             z-index: 999;
+            color: #fff;
+            cursor: pointer;
         }
+
+        .whatsapp-float { right: 25px; background: #25D366; }
+        .facebook-float { right: 95px; background: #1877F2; }
 
         @media(max-width:992px){
             .nav-links {
@@ -266,14 +268,9 @@
                 text-align: center;
             }
 
-            .nav-links.active {
-                display: flex;
-            }
+            .nav-links.active { display: flex; }
 
-            .hamburger {
-                display: block;
-                color: var(--dark-blue);
-            }
+            .hamburger { display: block; color: var(--dark-blue); }
 
             .contact-container { flex-direction: column; }
             .gallery-grid { grid-template-columns: repeat(2,1fr); }
@@ -354,8 +351,8 @@
         <div class="section-title"><h2>Contact Us</h2></div>
         <div class="contact-container">
             <div class="contact-details">
-                <p><i class="fas fa-envelope"></i><a href="mailto:felexpainter's17@gmail.com">felexpainter's17@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i><a href="tel:+27618758138">(+27) 61 875 8138</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:flexpainter's17@gmail.com">flexpainter's17@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:+27618758">(+27) 61 875 8</a></p>
                 <p>Windhoek Main Road, Cape Town</p>
             </div>
 
@@ -374,15 +371,18 @@
     <p>Windhoek Main Road, Cape Town</p>
 </footer>
 
-<a href="https://wa.me/27618758138" class="whatsapp-float" target="_blank">
+<!-- Floating Buttons -->
+<a href="https://wa.me/27618758" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://web.facebook.com/profile.php?id=61584634001938" class="facebook-float" target="_blank">
+    <i class="fab fa-facebook-f"></i>
 </a>
 
 <script>
     // Hamburger toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
-
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
